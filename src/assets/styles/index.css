@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('./modal.css');
+@import url('./alert.css');
+body {
+    background-color: #f2f7f8;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vw;
+}
+
+.board {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: calc(10vh + 6px) calc(10vh + 6px) calc(10vh + 6px);
+    gap: 10px;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vh;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #8a84ca;
+    border-radius: 10px;
+    color: #8a84ca;
+    font-size: 24px;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+.cell-icon {
+    width: 80%;
+    height: 80%;
+}
+.cell:hover {
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(179, 86, 255, 0.5);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(139, 0, 255, 0.5);
+    box-shadow: 0px 0px 10px 2px rgba(179, 86, 255, 0.5);
+}
+.btn-icon {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+.main-btn {
+    /* margin: 20px 0; */
+    padding: 10px;
+    outline: none;
+    border: 3px solid #8a84ca;
+    border-radius: 10px;
+    color: #8a84ca;
+    background-color: transparent;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
+.main-btn:hover {
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(179, 86, 255, 0.5);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(139, 0, 255, 0.5);
+    box-shadow: 0px 0px 10px 2px rgba(179, 86, 255, 0.5);
+}
+
+.btn-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.game-settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #8a84ca;
+    gap: 5px;
+}
+
+.game-settings_select {
+    text-align: center;
+    padding: 10px;
+    outline: none;
+    border: 3px solid #8a84ca;
+    border-radius: 10px;
+    color: #8a84ca;
+    background-color: transparent;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.game-settings_select:hover {
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(179, 86, 255, 0.5);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(139, 0, 255, 0.5);
+    box-shadow: 0px 0px 10px 2px rgba(179, 86, 255, 0.5);
+}
